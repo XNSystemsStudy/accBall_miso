@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-var app = {
+/*var app = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();
@@ -34,7 +34,6 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
       //  app.receivedEvent('deviceready');
-        console.log(navigator.accelerometer);
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -46,8 +45,8 @@ var app = {
       //  receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
-        
-       // var button=document.getElementById("getAccelerometer");
-       // button.addEventListener("click",getAcceler,false);
     }
-};
+};*/
+
+var myApp = angular.module('myApp', []);
+
