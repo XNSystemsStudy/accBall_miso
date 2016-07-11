@@ -11,7 +11,8 @@ myApp.controller("MainCtrl", ['$scope', '$timeout', function($scope, $timeout){
   $scope.circle = {
     x : $scope.posX,
     y : $scope.posY,
-    r : $scope.circleRadius
+    r : $scope.circleRadius,
+    color : "yellow"
   };
 
 
