@@ -5,13 +5,14 @@ myApp.controller("MainCtrl", ['$scope', '$timeout', function($scope, $timeout){
   $scope.watchID = null;
   $scope.innerWidth = window.innerWidth;
   $scope.innerHeight = window.innerHeight - 40;
+  $scope.circleRadius = 40;
+  $scope.posX = ($scope.innerWidth - $scope.circleRadius) / 2;
+  $scope.posY = ($scope.innerHeight - $scope.circleRadius) / 2;
   $scope.circle = {
     x : $scope.posX,
     y : $scope.posY,
-    r : 40
+    r : $scope.circleRadius
   };
-  $scope.posX = ($scope.innerWidth - $scope.circle.r) / 2;
-  $scope.posY = ($scope.innerHeight - $scope.circle.r) / 2;
 
 
   $scope.startWatch = function() {
